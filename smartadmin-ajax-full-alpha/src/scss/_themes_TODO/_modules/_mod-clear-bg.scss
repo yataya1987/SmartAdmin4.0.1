@@ -1,0 +1,10 @@
+.mod-clean-page-bg {
+	.page-wrapper {
+		background: $white !important;
+
+	}
+
+	.page-header {
+		border-bottom-color: lighten($header-border-bottom-color, 25%);
+	}
+}

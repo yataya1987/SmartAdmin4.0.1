@@ -1,0 +1,16 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+node_modules
+bower_components
+dist
+dist-beta.1
+*.zip
+repo-backup
+dist-flex
+inspirations
+cache
+log
+test
+test.html
+TODO.txt
+.vscode/
+out/

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{{> include/_copyright-header}}
+<html lang="en">
+	<head>
+		{{> include/_head}}
+	</head>
+	<body class="mod-bg-1 {{preemptiveclass}}">
+		
+		{{!-- save-settings-script --}}
+		{{> include/_scripts-loading-saving}}
+		
+		<!-- BEGIN Page Wrapper -->
+		<div class="page-wrapper">
+
+			<div class="page-inner">
+
+				<!-- BEGIN Left Aside -->
+				{{> include/_left-panel }}
+				<!-- END Left Aside -->
+
+				<div class="page-content-wrapper">
+					
+					<!-- BEGIN Page Header -->
+					{{> include/_page-header }}
+					<!-- END Page Header -->
+
+					<!-- BEGIN Page Content -->
+					<!-- the #js-page-content id is needed for some plugins to initialize -->
+					<main id="js-page-content" role="main" class="page-content">
+						{{#if preemptiveclass}}
+							<!-- Page heading removed for composed layout -->
+						{{else}}
+							{{> include/_page-breadcrumb }}
+							{{> include/_page-heading }}
+						{{/if}}
+						{{#>content-block}}{{/content-block}}
+					</main>
+					{{> include/_page-content-overlay }}
+					<!-- END Page Content -->
+
+					<!-- BEGIN Page Footer -->
+					{{> include/_page-footer }}
+					<!-- END Page Footer -->
+
+					<!-- BEGIN Shortcuts -->
+					{{> include/_shortcut-modal }}
+					<!-- END Shortcuts -->
+
+				</div>
+
+			</div>
+
+		</div>
+		<!-- END Page Wrapper -->
+
+		<!-- BEGIN Quick Menu -->
+		{{> include/_shortcut-menu }}
+		<!-- END Quick Menu -->
+
+		<!-- BEGIN Messenger -->
+		{{> include/_shortcut-messenger }}
+		<!-- END Messenger -->
+
+		<!-- BEGIN Page Settings -->
+		{{> include/_page-settings }}
+		<!-- END Page Settings -->
+
+		{{!-- Google Analytics  code if GOOGLE_ANALYTICS_ID id available --}}
+		{{> include/_google_analytics }}
+		
+		{{> include/_scripts-base-plugins}}
+	</body>
+</html>

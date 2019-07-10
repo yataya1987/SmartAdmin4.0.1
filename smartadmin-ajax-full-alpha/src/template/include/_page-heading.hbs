@@ -1,0 +1,20 @@
+{{#if heading}}
+
+<div class="subheader">
+
+	{{#> header-icon-block}}{{/header-icon-block}}
+
+	<h1 class="subheader-title">
+		{{{heading}}}
+		<small>
+		{{#if pagedescription}}
+			{{{pagedescription}}}
+		{{/if}}
+		</small>
+	</h1>	
+
+	{{#> subheader-block}}{{/subheader-block}}
+
+</div>
+
+{{/if}}

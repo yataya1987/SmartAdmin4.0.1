@@ -1,0 +1,51 @@
+.settings-panel {
+	.expanded {
+		&.theme-colors {
+			display: block;
+			box-shadow: none;
+			border: 0;
+			background: transparent;
+
+			> ul {
+				height: auto;
+
+				> li {
+
+					[data-action] {
+
+						&:hover {
+							opacity: 1;
+						}
+					}
+
+				}
+
+				&:last-child {
+					margin-right:0;
+				}
+			}	
+
+			/*@include theme-button-color ($theme-1-fusion, $theme-1-primary, $theme-1-info, $theme-1-success, $theme-1-warning, $theme-1-danger)*/
+
+			#myapp-1 { 
+				//@include theme-button-color (#434a51, #2196f3, #ac2db4, #2cb030, #ff8a1f, #f91711);
+				background: #434a51;
+				box-shadow: inset 0 0 0 3px rgb(43, 161, 255);
+			 }
+			#myapp-2 { 
+				//@include theme-button-color ($theme-2-fusion, $theme-2-primary, $theme-2-info, $theme-2-success, $theme-2-warning, $theme-2-danger);
+				background: #334768;
+			} 
+			#myapp-3 { 
+				//@include theme-button-color (#476f85, #00bbff, #8c1fad, #33a91e, #ff540a, #f50025);
+				background: #476f85;
+			} 
+			#myapp-4 { 
+				//@include theme-button-color (#5c4581, #4b00f9, #a81e39, #1da494, #abff04, #efd300);
+				background: #5c4581;
+			}
+
+		}
+	}
+}
+							

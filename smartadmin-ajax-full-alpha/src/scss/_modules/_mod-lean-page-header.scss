@@ -1,0 +1,34 @@
+.mod-lean-subheader {
+	.subheader {
+		margin:0;
+
+		.subheader-title {
+
+			margin-top: 0;
+			font-size:16px;
+			display: inline-block;
+			font-weight: 400;
+			text-transform: capitalize;
+
+			&:not(:only-child) {
+				margin-top: 23px;
+			}
+
+			small {
+
+				font-size: 16px;
+				display: inline-block;
+				text-transform: capitalize;
+
+				&:before {
+					content:" - ";
+				}
+			}
+		}
+
+		.breadcrumb {
+			position: absolute;
+			top: 0;
+		}
+	}
+}

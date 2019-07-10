@@ -1,0 +1,11 @@
+{{!-- <main id="js-page-content" role="main" class="page-content"> --}}
+	{{#if preemptiveclass}}
+		<!-- Page heading removed for composed layout -->
+	{{else}}
+		{{> include/_page-breadcrumb }}
+		{{> include/_page-heading }}
+	{{/if}}
+	{{#>head-block}}{{/head-block}}
+	{{#>content-block}}{{/content-block}}
+	{{#>scripts-block}}{{/scripts-block}}
+{{!-- </main> --}}

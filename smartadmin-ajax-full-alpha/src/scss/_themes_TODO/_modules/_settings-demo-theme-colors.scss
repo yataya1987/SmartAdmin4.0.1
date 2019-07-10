@@ -1,0 +1,22 @@
+.settings-panel {
+	.expanded {
+		&.theme-colors {
+
+			#myapp-1 { 
+				background: #434a51;
+				box-shadow: inset 0 0 0 3px rgb(43, 161, 255);
+			 }
+			#myapp-2 { 
+				background: #334768;
+			} 
+			#myapp-3 { 
+				background: #476f85;
+			} 
+			#myapp-4 { 
+				background: #5c4581;
+			}
+
+		}
+	}
+}
+							
